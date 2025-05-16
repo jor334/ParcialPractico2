@@ -25,9 +25,9 @@ export class AnimeDetailComponent implements OnInit {
 
   ngOnInit() {
     if (this.animeDetail === undefined){
-      this.animeId = this.route.snapshot.paramMap.get("name")!
+      this.animeId = this.route.snapshot.paramMap.get("id")!
       if (this.animeId){
-        this.getAnime
+        this.getAnime();
       }
     }
   }

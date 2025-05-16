@@ -22,6 +22,11 @@ export class AnimeService {
       map((animes: Anime[]) => {
         //Complete con el código necesario para recorrer los animes y retornar el anime con el id buscado
         // pista: use un for tradicional con comparación de un id con un if
+        for (var anime of animes){
+          if (parseInt(id) == anime.id){
+            return anime
+          }
+        }
 
 
         //No borre esto, es necesario para manejar el caso en el que no exista un anime con el id dado por parámetro.

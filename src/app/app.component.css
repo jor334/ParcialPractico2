@@ -1,0 +1,10 @@
+#bannerIMG{
+    width: 300px;
+    height: 200px
+}
+
+#banner{
+    height: 200px;
+
+    background-color: #1c90ff;
+}

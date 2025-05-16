@@ -5,7 +5,8 @@ import { AnimeService } from '../anime.service';
 @Component({
   selector: 'app-anime-list',
   templateUrl: './anime-list.component.html',
-  styleUrls: ['./anime-list.component.css']
+  styleUrls: ['./anime-list.component.css'],
+  standalone: false
 })
 export class AnimeListComponent implements OnInit {
 

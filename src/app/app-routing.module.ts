@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnimeListComponent } from './anime/anime-list/anime-list.component';
+import { AnimeDetailComponent } from './anime/anime-detail/anime-detail.component';
 
 const routes: Routes = [
-  {path: ''}
+  {path: '', component:AnimeListComponent},
+  { path: 'animes', loadChildren: () => import('./anime/anime.module').then(m => m.AnimeModule) },
 ];
 
 @NgModule({
